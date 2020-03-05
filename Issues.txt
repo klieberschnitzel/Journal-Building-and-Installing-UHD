@@ -1,0 +1,38 @@
+1. udh_usrp_probe 
+
+Because I get the "send buffer could not be resized sufficiently" error I configure
+/etc/sysctl.conf
+
+net.core.rmem_max=24266666
+net.core.wmem_max=24266666
+
+/etc/sysctl.conf is suppose to execute everytime I boot up but it looks like something 
+overrides this configuration because I still get the write (send buffer) error as shown below:
+
+After opening up a terminal, i need to run 
+sudo sysctl -p 
+
+--I shouldn't have to.
+What's write over the net.core.wmen_max setting after sysctl.conf runs?
+
+**************************************
+[INFO] [X300] X300 initialization sequence...
+[INFO] [X300] Maximum frame size: 1472 bytes.
+[INFO] [X300] Radio 1x clock: 200 MHz
+[INFO] [GPS] Found an internal GPSDO: LC_XO, Firmware Rev 0.929a
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+[INFO] [0/DDC_0] Initializing block control (NOC ID: 0xDDC0000000000000)
+[WARNING] [UDP] The send buffer could not be resized sufficiently.
+Target sock buff size: 24266666 bytes.
+Actual sock buff size: 1048576 bytes.
+See the transport application notes on buffer resizing.
+Please run: sudo sysctl -w net.core.wmem_max=24266666
+************************************************
+
