@@ -1,0 +1,305 @@
+Selecting Windows SDK version 10.0.18362.0 to target Windows 10.0.18363.
+
+Configuring the Python interpreter...
+Manually determining build Python version...
+Python interpreter: C:/Python/Python37/python.exe Version: 3.7.4
+Override with: -DPYTHON_EXECUTABLE=<path-to-python>
+Manually determining runtime Python version...
+Python runtime interpreter: C:/Python/Python37/python.exe Version: 3.7.4
+Override with: -DRUNTIME_PYTHON_EXECUTABLE=<path-to-python>
+Finding Python Libraries...
+Python Libraries: C:/Python/Python37/libs/python37.lib
+Python include directories: C:/Python/Python37/include
+Working off of feature or development branch. Updating version number.
+Using UHD Images Directory: C:\Program Files (x86)\UHD\share\uhd\images
+
+Configuring Boost C++ Libraries...
+
+Checking for Boost version 1.58 or greater
+  Looking for required Boost components...
+  Enabling Boost Error Code Header Only
+    Disabling boost::asio use of std::string_view
+  Boost version: 1.71.0
+  Boost include directories: C:/local/boost_1_71_0_b1_rc1
+  Boost library directories: C:/local/boost_1_71_0_b1_rc1/lib64-msvc-14.2
+  Boost libraries: 
+Looking for Boost version 1.58 or greater - found
+
+Python checking for Python version 2.7 or greater
+Python checking for Python version 2.7 or greater - found
+
+Python checking for Mako templates 0.4.2 or greater
+Python checking for Mako templates 0.4.2 or greater - found
+
+Python checking for requests 2.0 or greater
+Python checking for requests 2.0 or greater - found
+
+Python checking for numpy 1.7 or greater
+Python checking for numpy 1.7 or greater - found
+
+Configuring LibUHD support...
+  Dependency Boost_FOUND = TRUE
+  Dependency HAVE_PYTHON_PLAT_MIN_VERSION = TRUE
+  Dependency HAVE_PYTHON_MODULE_MAKO = TRUE
+  Enabling LibUHD support.
+  Override with -DENABLE_LIBUHD=ON/OFF
+
+Configuring LibUHD - C API support...
+  Dependency ENABLE_LIBUHD = ON
+  Enabling LibUHD - C API support.
+  Override with -DENABLE_C_API=ON/OFF
+
+Configuring LibUHD - Python API support...
+  Dependency ENABLE_LIBUHD = ON
+  Dependency HAVE_PYTHON_MODULE_NUMPY = TRUE
+  Dependency HAVE_PYTHON_LIBS = TRUE
+  Disabling LibUHD - Python API support.
+  Override with -DENABLE_PYTHON_API=ON/OFF
+
+Configuring Examples support...
+  Dependency ENABLE_LIBUHD = ON
+  Enabling Examples support.
+  Override with -DENABLE_EXAMPLES=ON/OFF
+
+Configuring Utils support...
+  Dependency ENABLE_LIBUHD = ON
+  Enabling Utils support.
+  Override with -DENABLE_UTILS=ON/OFF
+
+Configuring Tests support...
+  Dependency ENABLE_LIBUHD = ON
+  Enabling Tests support.
+  Override with -DENABLE_TESTS=ON/OFF
+
+Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+Looking for libusb_handle_events_timeout_completed
+Looking for libusb_handle_events_timeout_completed - found
+Looking for libusb_error_name
+Looking for libusb_error_name - found
+Looking for libusb_strerror
+Looking for libusb_strerror - found
+Found LIBUSB: C:/local/libusb-1.0.22/MS64/dll/libusb-1.0.lib  
+Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+Could NOT find LIBERIO (missing: LIBERIO_LIBRARY LIBERIO_INCLUDE_DIR) 
+Could NOT find DPDK: Found unsuitable version ".", but required is exact version "17.11" (found DPDK_INCLUDE_CONFIG_DIR-NOTFOUND;DPDK_INCLUDE_ETHDEV_DIR-NOTFOUND)
+
+Configuring LIBERIO support...
+  Dependency ENABLE_LIBUHD = ON
+  Dependency LIBERIO_FOUND = FALSE
+  Disabling LIBERIO support.
+  Override with -DENABLE_LIBERIO=ON/OFF
+
+Configuring USB support...
+  Dependency ENABLE_LIBUHD = ON
+  Dependency LIBUSB_FOUND = TRUE
+  Enabling USB support.
+  Override with -DENABLE_USB=ON/OFF
+
+Configuring B100 support...
+  Dependency ENABLE_LIBUHD = ON
+  Dependency ENABLE_USB = ON
+  Enabling B100 support.
+  Override with -DENABLE_B100=ON/OFF
+
+Configuring B200 support...
+  Dependency ENABLE_LIBUHD = ON
+  Dependency ENABLE_USB = ON
+  Enabling B200 support.
+  Override with -DENABLE_B200=ON/OFF
+
+Configuring USRP1 support...
+  Dependency ENABLE_LIBUHD = ON
+  Dependency ENABLE_USB = ON
+  Enabling USRP1 support.
+  Override with -DENABLE_USRP1=ON/OFF
+
+Configuring USRP2 support...
+  Dependency ENABLE_LIBUHD = ON
+  Enabling USRP2 support.
+  Override with -DENABLE_USRP2=ON/OFF
+
+Configuring X300 support...
+  Dependency ENABLE_LIBUHD = ON
+  Enabling X300 support.
+  Override with -DENABLE_X300=ON/OFF
+
+Configuring N230 support...
+  Dependency ENABLE_LIBUHD = ON
+  Enabling N230 support.
+  Override with -DENABLE_N230=ON/OFF
+
+Configuring MPMD support...
+  Dependency ENABLE_LIBUHD = ON
+  Enabling MPMD support.
+  Override with -DENABLE_MPMD=ON/OFF
+
+Configuring N300 support...
+  Dependency ENABLE_LIBUHD = ON
+  Dependency ENABLE_MPMD = ON
+  Enabling N300 support.
+  Override with -DENABLE_N300=ON/OFF
+
+Configuring N320 support...
+  Dependency ENABLE_LIBUHD = ON
+  Dependency ENABLE_MPMD = ON
+  Enabling N320 support.
+  Override with -DENABLE_N320=ON/OFF
+
+Configuring E320 support...
+  Dependency ENABLE_LIBUHD = ON
+  Dependency ENABLE_MPMD = ON
+  Enabling E320 support.
+  Override with -DENABLE_E320=ON/OFF
+
+Configuring E300 support...
+  Dependency ENABLE_LIBUHD = ON
+  Dependency ENABLE_MPMD = ON
+  Enabling E300 support.
+  Override with -DENABLE_E300=ON/OFF
+
+Configuring OctoClock support...
+  Dependency ENABLE_LIBUHD = ON
+  Enabling OctoClock support.
+  Override with -DENABLE_OCTOCLOCK=ON/OFF
+
+Configuring DPDK support...
+  Dependency ENABLE_MPMD = ON
+  Dependency DPDK_FOUND = FALSE
+  Disabling DPDK support.
+  Override with -DENABLE_DPDK=ON/OFF
+
+Looking for C++ include emmintrin.h
+CMake Warning (dev) at C:/Program Files/CMake/share/cmake-3.15/Modules/CheckIncludeFileCXX.cmake:79 (message):
+  Policy CMP0075 is not set: Include file check macros honor
+  CMAKE_REQUIRED_LIBRARIES.  Run "cmake --help-policy CMP0075" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  CMAKE_REQUIRED_LIBRARIES is set to:
+
+    C:/local/libusb-1.0.22/MS64/dll/libusb-1.0.lib
+
+  For compatibility with CMake 3.11 and below this check is ignoring it.
+Call Stack (most recent call first):
+  lib/convert/CMakeLists.txt:25 (CHECK_INCLUDE_FILE_CXX)
+  lib/CMakeLists.txt:46 (include)
+  lib/CMakeLists.txt:88 (INCLUDE_SUBDIRECTORY)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+Looking for C++ include emmintrin.h - found
+
+Configuring priority scheduling...
+Performing Test HAVE_PTHREAD_SETSCHEDPARAM
+Performing Test HAVE_PTHREAD_SETSCHEDPARAM - Failed
+Performing Test HAVE_WIN_SETTHREADPRIORITY
+Performing Test HAVE_WIN_SETTHREADPRIORITY - Success
+  Priority scheduling supported through windows SetThreadPriority.
+Performing Test HAVE_PTHREAD_SETNAME
+Performing Test HAVE_PTHREAD_SETNAME - Failed
+  Setting thread names is not supported.
+
+Configuring high resolution timing...
+Performing Test HAVE_CLOCK_GETTIME
+Performing Test HAVE_CLOCK_GETTIME - Failed
+Performing Test HAVE_MACH_ABSOLUTE_TIME
+Performing Test HAVE_MACH_ABSOLUTE_TIME - Failed
+Performing Test HAVE_QUERY_PERFORMANCE_COUNTER
+Performing Test HAVE_QUERY_PERFORMANCE_COUNTER - Success
+  High resolution timing supported through QueryPerformanceCounter.
+
+Configuring module loading...
+Performing Test HAVE_DLOPEN
+Performing Test HAVE_DLOPEN - Failed
+Performing Test HAVE_LOAD_LIBRARY
+Performing Test HAVE_LOAD_LIBRARY - Success
+  Module loading supported through LoadLibrary.
+
+Processing NI-RIO FPGA LVBITX Bitstreams...
+  Using x300.lvbitx_base for codegen
+  Using x310.lvbitx_base for codegen
+
+USB support enabled via libusb.
+
+Configuring interface address discovery...
+Performing Test HAVE_GETIFADDRS
+Performing Test HAVE_GETIFADDRS - Failed
+Looking for C++ include winsock2.h
+Looking for C++ include winsock2.h - found
+  Interface address discovery supported through SIO_GET_INTERFACE_LIST.
+Looking for C++ include atlbase.h
+Looking for C++ include atlbase.h - found
+
+Loading build info.
+Could NOT find Curses (missing: CURSES_LIBRARY CURSES_INCLUDE_PATH) 
+Performing Test HAVE_C99_STRUCTDECL
+Performing Test HAVE_C99_STRUCTDECL - Success
+
+Adding B2XX device test target
+Adding X3x0 device test target
+Adding E3XX device test target
+Adding N3XX device test target
+Adding E32x device test target
+
+Could NOT find Curses (missing: CURSES_LIBRARY CURSES_INCLUDE_PATH) 
+Found Doxygen: C:/Program Files/doxygen/bin/doxygen.exe (found version "1.8.14") found components:  doxygen missing components:  dot
+
+Configuring Manual support...
+  Dependency DOXYGEN_FOUND = YES
+  Enabling Manual support.
+  Override with -DENABLE_MANUAL=ON/OFF
+
+Configuring API/Doxygen support...
+  Dependency DOXYGEN_FOUND = YES
+  Enabling API/Doxygen support.
+  Override with -DENABLE_DOXYGEN=ON/OFF
+
+Compressed Man Pages disabled
+  Override with -DENABLE_MAN_PAGE_COMPRESSION=ON/OFF
+
+Configuring Man Pages support...
+  Dependency NOT_WIN32 = 
+  Disabling Man Pages support.
+  Override with -DENABLE_MAN_PAGES=ON/OFF
+
+######################################################
+# UHD enabled components                              
+######################################################
+  * LibUHD
+  * LibUHD - C API
+  * Examples
+  * Utils
+  * Tests
+  * USB
+  * B100
+  * B200
+  * USRP1
+  * USRP2
+  * X300
+  * N230
+  * MPMD
+  * N300
+  * N320
+  * E320
+  * E300
+  * OctoClock
+  * Manual
+  * API/Doxygen
+
+######################################################
+# UHD disabled components                             
+######################################################
+  * LibUHD - Python API
+  * LIBERIO
+  * DPDK
+  * Man Pages
+
+******************************************************
+* You are building a development branch of UHD.
+* These branches are designed to provide early access
+* to UHD and USRP features, but should be considered
+* unstable and/or experimental!
+******************************************************
+Building version: 3.15.0.HEAD-0-gaea0e2de
+Using install prefix: C:/Program Files (x86)/UHD
+Configuring done
+Generating done
